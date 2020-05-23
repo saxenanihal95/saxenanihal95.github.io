@@ -5,10 +5,13 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "@mdx-js/mdx": "^1.6.1",
     "@mdx-js/react": "^1.6.1",
     "gatsby": "^2.17.6",
     "gatsby-image": "^2.2.30",
+    "gatsby-plugin-emotion": "^4.3.2",
     "gatsby-plugin-manifest": "^2.2.25",
     "gatsby-plugin-mdx": "^1.2.7",
     "gatsby-plugin-offline": "^3.0.17",
@@ -24,8 +27,8 @@
     "react-live": "^2.2.2"
   },
   "devDependencies": {
-    "prettier": "^1.18.2",
-    "@babel/plugin-proposal-optional-chaining": "^7.9.0"
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby"

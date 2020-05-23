@@ -5,6 +5,8 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 // import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live"
 import Highlight, { defaultProps } from "prism-react-renderer"
+import Layout from "./layout"
+import SEO from "./seo"
 
 const components = {
   Link,
@@ -34,12 +36,13 @@ const components = {
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
-    <div>
+    <Layout>
+      <SEO title={mdx.frontmatter.title} />
       <h1>{mdx.frontmatter.title}</h1>
       <MDXProvider components={components}>
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </MDXProvider>
-    </div>
+    </Layout>
   )
 }
 

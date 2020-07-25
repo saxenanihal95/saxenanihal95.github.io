@@ -27,15 +27,19 @@ const Layout = ({ children }) => {
   const LayoutContainer = styled.div`
     padding: 20px;
     width: 80%;
-    margin-left: 20%;
-    /* background-color: #292a2d; */
     overflow: auto;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
   `
 
   const MainContainer = styled.div`
     display: flex;
     height: 100vh;
     width: 100vw;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
   `
 
   return (

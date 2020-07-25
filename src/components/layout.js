@@ -26,16 +26,26 @@ const Layout = ({ children }) => {
 
   const LayoutContainer = styled.div`
     padding: 20px;
+    width: 80%;
+    margin-left: 20%;
+    /* background-color: #292a2d; */
+    overflow: auto;
+  `
+
+  const MainContainer = styled.div`
+    display: flex;
+    height: 100vh;
+    width: 100vw;
   `
 
   return (
-    <>
+    <MainContainer>
       <Header siteTitle={data.site.siteMetadata.title} />
       <LayoutContainer>
         <main>{children}</main>
       </LayoutContainer>
       <footer></footer>
-    </>
+    </MainContainer>
   )
 }
 

@@ -32,6 +32,13 @@ const components = {
       </Highlight>
     )
   },
+  table: props => {
+    return (
+      <div style={{ overflowX: "auto" }}>
+        <table {...props}></table>
+      </div>
+    )
+  },
 } // Provide common components here
 
 export default function PageTemplate({ data: { mdx } }) {

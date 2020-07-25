@@ -4,23 +4,20 @@ import logo from "../images/PsyCoder1.png"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
 
-const Logo = styled.img`
-  max-width: 250px;
-`
-
-const HeaderContainer = styled.div`
-  border-bottom: 1px solid #f4f4f4;
+const HeaderContainer = styled.header`
+  height: 100vh;
+  width: 20%;
+  position: fixed;
   padding: 20px;
+  /* background: #252627; */
 `
 
 const Header = ({ siteTitle }) => (
-  <header>
-    <HeaderContainer>
-      <Link to="/">
-        <Logo src={logo} />
-      </Link>
-    </HeaderContainer>
-  </header>
+  <HeaderContainer>
+    <Link to="/">
+      <img src={logo} />
+    </Link>
+  </HeaderContainer>
 )
 
 Header.propTypes = {

@@ -15,12 +15,12 @@ const HeaderContainer = styled.header`
   }
 `
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [colorMode, setColorMode] = useColorMode()
   return (
     <HeaderContainer>
       <Link to="/">
-        <img src={logo} />
+        <img src={logo} alt="psycoderblog" />
       </Link>
       <button
         onClick={e => {
